@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transaksi | Rental Mobil</title>
+
+    <link rel="stylesheet" href="transaksi.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        🚗 Rental Mobil
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Beranda
+                </a>
+            </li>
+
+            <li>
+                <a href="produk.html">
+                    Mobil
+                </a>
+            </li>
+
+            <li>
+                <a href="transaksi.html" class="active">
+                    Transaksi
+                </a>
+            </li>
+
+            <li>
+                <a href="kontak.html">
+                    Kontak
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= JUDUL ================= -->
+
+<section class="judul">
+
+    <h1>
+        Form Penyewaan Mobil
+    </h1>
+
+    <p>
+        Silakan isi data penyewaan dengan lengkap.
+    </p>
+
+</section>
+
+
+<!-- ================= TRANSAKSI ================= -->
+
+<section class="transaksi-container">
+
+
+    <!-- FORM -->
+
+    <div class="form-box">
+
+        <h2>
+            Data Penyewa
+        </h2>
+
+
+        <form id="formTransaksi">
+
+
+            <!-- NAMA -->
+
+            <label for="nama">
+                Nama Penyewa
+            </label>
+
+            <input
+                type="text"
+                id="nama"
+                placeholder="Masukkan nama lengkap"
+            >
+
+
+            <!-- NOMOR HP -->
+
+            <label for="hp">
+                Nomor HP
+            </label>
+
+            <input
+                type="tel"
+                id="hp"
+                placeholder="08xxxxxxxxxx"
+            >
+
+
+            <!-- MOTOR -->
+
+            <label for="produk">
+                Mobil
+            </label>
+
+            <input
+                type="text"
+                id="produk"
+                readonly
+                placeholder="Pilih mobil dari halaman produk"
+            >
+
+
+            <!-- HARGA -->
+
+            <label for="harga">
+                Harga Sewa / Hari
+            </label>
+
+            <input
+                type="text"
+                id="harga"
+                readonly
+            >
+
+
+            <!-- TANGGAL SEWA -->
+
+            <label for="tgl">
+                Tanggal Mulai Sewa
+            </label>
+
+            <input
+                type="date"
+                id="tgl"
+            >
+
+
+            <!-- TANGGAL KEMBALI -->
+
+            <label for="tglKembali">
+                Tanggal Kembali
+            </label>
+
+            <input
+                type="date"
+                id="tglKembali"
+            >
+
+
+            <!-- LAMA SEWA -->
+
+            <label for="hari">
+                Lama Sewa
+            </label>
+
+            <input
+                type="text"
+                id="hari"
+                value="0 hari"
+                readonly
+            >
+
+
+            <!-- TOMBOL -->
+
+            <button
+                type="button"
+                onclick="hitungTotal()"
+            >
+                Hitung Total
+            </button>
+
+
+        </form>
+
+
+        <!-- KEMBALI -->
+
+        <a
+            href="index.html"
+            class="btn-kembali"
+        >
+            ← Kembali ke Beranda
+        </a>
+
+
+    </div>
+
+
+
+    <!-- STRUK -->
+
+    <div class="struk-box">
+
+        <div class="struk-header">
+
+            <div class="struk-icon">
+                🚗
+            </div>
+
+            <h2>
+                Ringkasan Rental
+            </h2>
+
+            <p>
+                Rental Mobil
+            </p>
+
+        </div>
+
+
+        <div
+            id="hasil"
+            class="hasil"
+        >
+
+            <div class="kosong">
+
+                <div>
+                    📋
+                </div>
+
+                <p>
+                    Belum ada transaksi
+                </p>
+
+                <small>
+                    Isi formulir kemudian klik
+                    "Hitung Total"
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Rental Mobil | Semua Hak Dilindungi
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

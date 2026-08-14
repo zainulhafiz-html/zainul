@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rental Mobil</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+    <div class="logo">
+        🚗 Rental Mobil
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="active">Beranda</a>
+            </li>
+
+            <li>
+                <a href="produk.html">Mobil</a>
+            </li>
+
+            <li>
+                <a href="transaksi.html">Transaksi</a>
+            </li>
+
+            <li>
+                <a href="kontak.html">Kontak</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>Rental Mobil </h1>
+
+        <p>
+            Sewa mobil dengan mudah, cepat, dan harga terjangkau.
+            Cocok untuk perjalanan harian, liburan, maupun keperluan lainnya.
+        </p>
+
+        <a href="produk.html" class="btn">
+            Lihat Mobil
+        </a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJIBCAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAwYCB//EAEQQAAEEAQIDBAcEBgYLAAAAAAEAAgMEEQUSBiExE0FRYRQiMnGBkaEVI0KxB1KCksHRFkNiY4PhJDM0U3JzdbLCw/D/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/APhqIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICItsFeaw/ZXifI7wY3KDUis/sS2wZtdnWHjK4/wAAVpNSq3O/UYif7uN5/MBBCRb3srN9meR3+EB/FWfC3DtnibWYdNouDXPy6SWQYbFGPae7n0H54CClRXXEGkafpt2Stpusx6jsO0vEXZAnyySqh8b4zh7SPf3oPCIiAiIgIiICIiAiIgIiICIiAiIgIiICIp9XRNVuNDqum3JWno5kDiPnhBARdBHwZrriN9WOIHvlsxsx8C7Kkt4JsjHb6rpcQ78yucfo0oOWRdd/RLTIm5s8Rxg9/ZVi4fVzV6m0fhWk0elXdTlPdsY2PPuyHIORawu6dO8norjReHLur+vFtirA4dZmy2Me7vcfIBWDJ+G3epQ0HUr7m/760QB+4FJOszse1lfR6EOAGNE9iawWjuGC8tHyCCY2DhfhyPd2I1S2Ostofdg+UfT97cqrUuK9VtsMdRjq9YdGQR7Gge4clDm4n1EOc1skLDkj7mpDFj4hufqq+TUrNmQdvO8gnm5xLsfA/wAEGqWO3O/dIyZ7jz5tJXqLTL0zwyKpM956Mawlx+HVdTqvCmr6Vw5X4hrTV7emTYBlZnLD5scB9AVzv29qxZ2bdSsxR9NkUhY35NwEE+twVr8jO1s0H0a45vnvkQMaPE7sHHuCu+EQ+eDUNC0OeRs1uBwmtRMPr7QS1ucZDCep95XJQt0579167byTl3ZVw8n4uePyWLklZk0kekSWxWlaGubMQHOPgQ04IzzQe7dFlC5JXtStkMZ2SGvIDtcOo5jnjp4eBK9OrGGm20yWOSrJIY9jiN7SBnLmgnGefMHuKlSanorCRFw+Mjll92Q/9uFEn1CvMcRaRVYPASTOP1eghyxj1nR8g32mnq3+YWlXEOn3J6j9RirwsYzkG7zl+OuGknPgob6k7/WFSWPqfYcR7hyQQ0WXNLSQ4EEdxWEBERAREQEREBERAREQERZaC5wABJPQBBK0+i6495MscEMY3Szy52xjoOgJJJ5YAJ+qvtPr8IxybJTq+qSg8mxhlWI/E73H4AHyVpDwre4dqUZtUssqOvkzROrwttuYxoxzZnH4+ozhR9Vvvhnp2YNSfr1eOQlv+jOriGQdRtx7WCCD0HnjCgn220NPpQ6np2hWo6kr3xB+n6lG4xvafWaS+uZB49ceCr3azVsHM9Picn/qEbv/AEBY0vU/Q9OZUrcSnSo2SPOwxyOeQT+INaRnGO9SxqUsg5cfXXf8unN/kptayIZl0aQevV4pb/iRu/8AALzr9PRNPoaXcr3dVlltl7pKM+yN8cbSWglwzjc4cuXQE+GZFvVXVoHSnjHWbL2kYrhkkXaeWS/IHnhcvfs2tSuPv33l7pnZLnOxnyGeeFZqV2vCOiatxFG61RoxUKQJa2SJ7Yd5HM5meTIR3ENz0PRdDT/Rjrc9xrLX2ZBWdgySwu7Q489wy79rK5LhzV4oxWFi3M3sLDZNscQkaWbcEAZGCO7r8F0nFHHGocUvboOiNdVpyN2zSTvbFuZ373u5NbjqB16c+iqNuu6npdavNo/CkbG14Wff6vI47n89pDMDIbnvZ1x4Lj+LJNJ0/NbTLrtSl3etYdH2bGkfqDOT7yceXet3FdmvotWtomi679pyMDnTy12t7CPf1ZG7mXcySTnHPl1K5iLSrEx3SzVoWn8U9ho+mc/RBXdV72hoBd1PQK49E0ilBI+bURctBv3cEEbuz3f2nnHL3BV7oWRyAWnEOcfWaOrc+Ph7kE63xLrOoaTBpNu7LNp9fnHBgAN+IGfHqtNHRbeo1p7FBnbMgwZQOrAe89wHI81uv6RLRvsqPjkE0gYYBHlxkDuQ2gDnz5YWzRtVsaFqLL8DWSscx0c0Z5NsRO5Oa7+fiAfeETTtJN6VzG26kTW+1LPO2Jg+Ljk/sgq7r6NwvXdt1PiVsgAyW0asj+fgHuAH0XNXI2tLJYv9VKMt8j3j5rT/AFfvKDuYL36PaRAbR1a65v45msGfgHAfRTY+OOGKx/0XQJmkdHARMd89pP1XzdEH0c/pA0N1hth2g2zO0YbL6YN4HgDsyOpUhn6QdDIxNp+qsDjkbLYdj8vNfMFu7CaSKSZkUjoYdrZJA0lrCegJ7s4OPcg+k8fUHSwsbSbalpz1mWIZ5pwTIS0PwGE5OARktyvmCu6kFzU6brMltxfTaGQCaU7mxsa9/wB2T3Nx0HTcFSnqgwiIgIiICIiAiIgIiICy0kOBb1HRYWyv2Xbx9uXiHcN5YAXBvfgHGThBZ6nR1qlNFp2oQywPj3TxQuwAN2Mubjlg7R08FGktajGxzJXylp69oN2fLJ7vJXuvO0KHU6f2JrVy7VZEfWuROHZeDBy955DA5deaxvhlaQyaKQEcg1wJPw6/RBzRsTdBIWjwbyH0Xl00rhh0j3e92Ve+jR9eyx+ys9jH+o35IKBpLSHDHI94yrb+kupiUytNNkh/rI6EDXfMMyo+qBrCxgAB5khWtCxwl2Y+0a2sGQMaPu5IyOvPqB3dPP5oK6xrt+Zjm+lWBuzuIlxuz1ztxn45VdLLJM8vle57j1c85JXWPfwLtIbBrecOx60fX8Pw8fDzVRqMmgCQ/Zle/wBmY+RsPbua/Hl1HegqMrCyQR1CAE9ASg21ndm4zdSzm3P63d/P4K8qR1NY0Y1mV+z1KBzpX2SSe0Z0x8yBjxPXngVVIsgD5bEBkYx7QWHlzIcvp/A9qPWtJki0PhuGvbobHz22CMvsNLz6mC0dMtPX8A8UHF1NfuVOJ6etWnvtT0S3aywS4kN/Dz5jry8Oq9apRuyaS7Vr9OWA6hM+aJ5aAxxJ3Hbzz0d3gfFT9bfHxDrdc1Z6o9Jf2YkkcGv3D1Rv6DmeYGcnvVTqz9UZv0y9dNqtp7nxRCJxMI2kglvIcsk8/NBWysBhkhHslgsRfL1h+f7qg/1Y95/grSrqdKtBXB030ieIk755iWHP4drQPV68ie8rNjiCaSftYKWm1Xf3FNnL3bgcfBBXVadq48sqV5p3gZLYmFxHyU77AvMLfSvR6gPM+k2GMcB/wk7voo9zVdQusLLV2xLGTns3yEtHuHQKEgu6tTQa0jZNS1OW0wHPZafA71h4F8m3HwaV0n9PdKraJZ0Ohw3H9m2B94yac5e7OdxIGS4EDB3cseC4HKwg67Q6cN3QbNmO0a76U3aNZZJ7EF7mABpAJyQDuzy5N8VzepVZqV+atYbtljdhwyDz+Cl8P6iKFsb3bYXkNm9XIfGSNzSO8EZ5KNrF12patcvPGDYmdJjwyc4QQ0REBERAREQEREBERAREQZWERAWxs0rfZkePc4rWiC6p8S3qkDIoxHhn4tz2uPmS1wyVvscV27WPSK1eTHeZZwfmJFzyIL1vETWcxo9Fxx1klsu+hlwomj6xNpN59yGtSnkexzQ21XbKxue8NPIHwKrUQZc4uPMrLXuZ7LiD4heUQTtLdC+yYLcmyKcbDIT7DuocfLPXyJVpQ1a9pN+tRlMsFeC3FLNG0Yc7Y4O+Pj78Fc6rejr01eu6tZrw24XR9mO1GJGNHQNeOYx3ZyB3IOg1K9p2t6vxM3TdKksssDtab3u2+iMacvdj6de8+Kn8aafQ4U4XoaZJMLPEFiL78h+RUiznZ785Hz8s8FBckrPe6sTGXDGc5IGQRz94HNapppZ5HSTSOke7q5xySg1oi9bT3oPKL3ho6qRXo27WPR60jwfxbcD59EEXCwrmLQbEjmxy2KkT/wBV8w3fJWzODoq9aW1qF3bBE3c90beXu8z5IOf0mhJdlOyMvawgEDvJzgfQrVqddlW9LDE8PY0jDgc9RlW+i2m1jcNRsbYXkDMwyQ3zHRUViTtZ3vAADnE4Awg1oiICIiAiIgIiICIiAstxuG4kDvIWEQbrFcw7SHNex3suaevw6haVKldIWwGVrdobhrwPaHmfJYMbHc/yQRkW/smHo5w94yvJgd+EtPuP80GpFKjoWXsD2xgg9AXtB+WcrD6lqL260rR4lhwgjIvW7xCbvABBjCYPgs5ceXNbG15HdS1o8XuAQasKbRr13WYobJkLpHBoazuJ6ZWgNEMvrFj9vP1TkFdHpY0rVaxyySLU4n9oHNPJzRjkP80GnTNDA1q/R1CvIW1Inue5v4CByJU7inhOjX0iHXeHL7bunlrfSY9w313HpkeGeXPmCuk1CWKelrmexoWr4YS9soe+eMcnDBxgY/Mqq03WtFqQT6XRbJJSkqvilkk5F5cBn4gjqg5Crot6wGuZDtY7o55ABUx2j1KDx9rXQ09THEC53/3xUGGxJ2cW+V7hE17wHOJxywFCLi5ri4kkkHJ+KC4dq1Gty03TWAjpLYO4/Lu+ZUK1ql61ymsv2/qt9VvyCgogzyW0Pl2mKJz9kmMsaThx9yQVpJjyGG97j0VnB2NNpIILhy7R3X4IM3NMip093pb2ybAZIyMh57gPiqYqbevusDY0Hb3k9SoKAiIgIiICIiAiIgIiICIiDYyQlgjcSWA5Az0K9mJzWl0bstHXuI960LaHZZtPMfUIMBzx3clkS+K3QiMtO1jpMdee13wwvRZWPtPliP8Aex7h8xz+iDT27mj7t7mnwBU6oLsrWugtRZIJLc4cMePJRfQ94zDLE84zgP6/A4Klx1aNtoML3RSAZczrtKCQftZvJ8TJh0wS1/55UF7Z4Z+0dQY3P4XMy0/BbDVuxf7PZLgOm15CiSW7e7bLK/Lf1u5Bqnk7SVz9jWEn2WjAHuC1oiDZC9rX5kbuGOisqGrOqNcyCGJgPMucMqq7sr06TLAwNAx395QW0usWJpu1c9rpMYaNuAF6jvtNWRz4Y2yNySccyTyCp92HAt6hDIXH1iTk5KD1nbCfFxx8AtY6FZBbu9YHaO4L32ob7DA3z70BkD38/ZHiVvZHDFzeQ4/2unyUd0z3dXLwTnqgly2+Q7M/RRXvc85cST5ryiAiIgIiICIiAiIgIiICIiAiIgLIWEQen9VuqveXhpc7b4ZREG64xoAIaAcdwSoSNRiwcZxnz5IiCytgCxCAAOTunuUDUgNrDgZyeaIgrysIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD/9k=" alt="Mobil Honda">
+
+    </div>
+
+</section>
+
+
+<!-- KATEGORI -->
+
+<section class="kategori">
+
+    <h2>Pilihan Mobil</h2>
+
+    <div class="kategori-container">
+
+        <div class="card">
+
+            <div class="icon">🚗</div>
+
+            <h3>Mobil Sedan</h3>
+
+            <p>
+                Mobil matic ringan dan irit untuk perjalanan sehari-hari.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🚗</div>
+
+            <h3>Honda Civic</h3>
+
+            <p>
+                Mobil stylish dengan desain modern dan nyaman.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🚗</div>
+
+            <h3>Toyota Avanza</h3>
+
+            <p>
+                Mobil matic bertenaga untuk perjalanan dalam kota.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🚗</div>
+
+            <h3>Toyota Innova</h3>
+
+            <p>
+                Pilihan nyaman untuk perjalanan jauh.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- KEUNGGULAN -->
+
+<section class="keunggulan">
+
+    <h2>Mengapa Rental Mobil Kami?</h2>
+
+    <div class="unggulan">
+
+        <div>
+
+            <div class="icon">✓</div>
+
+            <h3>Mobil Terawat</h3>
+
+            <p>
+                Mobil selalu diperiksa sebelum disewakan.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="icon">💰</div>
+
+            <h3>Harga Terjangkau</h3>
+
+            <p>
+                Harga sewa sesuai dengan kebutuhan Anda.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="icon">⚡</div>
+
+            <h3>Proses Cepat</h3>
+
+            <p>
+                Proses penyewaan mudah dan tidak ribet.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TESTIMONI -->
+
+<section class="testimoni">
+
+    <h2>Apa Kata Pelanggan?</h2>
+
+    <div class="testi-container">
+
+        <div class="testi">
+
+            ⭐⭐⭐⭐⭐
+
+            <p>
+                Gacor buet mobil.
+            </p>
+
+            <h4>- daffa</h4>
+
+        </div>
+
+
+        <div class="testi">
+
+            ⭐⭐⭐⭐⭐
+
+            <p>
+                Proses rental cepat dan harganya terjangkau.
+            </p>
+
+            <h4>- Zaki</h4>
+
+        </div>
+
+
+        <div class="testi">
+
+            ⭐⭐⭐⭐⭐
+
+            <p>
+                Cocok untuk jalan-jalan keliling kota.
+            </p>
+
+            <h4>- Zainul</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Rental Mobil | Semua Hak Dilindungi
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

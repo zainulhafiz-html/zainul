@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mobil | Rental Mobil</title>
+
+    <link rel="stylesheet" href="produk.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        🚗 Rental Mobil
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Beranda
+                </a>
+            </li>
+
+            <li>
+                <a href="produk.html" class="active">
+                    Mobil
+                </a>
+            </li>
+
+            <li>
+                <a href="transaksi.html">
+                    Transaksi
+                </a>
+            </li>
+
+            <li>
+                <a href="kontak.html">
+                    Kontak
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO PRODUK ================= -->
+
+<section class="produk-hero">
+
+    <div>
+
+        <h1>
+            Pilihan Mobil Honda
+        </h1>
+
+        <p>
+            Pilih mobil Honda yang sesuai dengan kebutuhan perjalanan Anda.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PENCARIAN ================= -->
+
+<section class="search-section">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Cari mobil..."
+    >
+
+</section>
+
+
+
+<!-- ================= PRODUK ================= -->
+
+<section class="produk-section">
+
+    <h2>
+        Mobil Yang Tersedia
+    </h2>
+
+
+    <div class="produk-container" id="produkContainer">
+
+
+        <!-- HONDA BEAT -->
+
+        <div class="produk">
+
+            <div class="gambar-produk">
+
+                <img
+                    src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=85"
+                    alt="Toyota Avanza"
+                >
+
+            </div>
+
+            <div class="produk-info">
+
+                <span class="status">
+                    Tersedia
+                </span>
+
+                <h3>
+                    Toyota Avanza
+                </h3>
+
+                <p class="deskripsi">
+                    Mobil matic ringan, irit bahan bakar,
+                    dan cocok untuk penggunaan sehari-hari.
+                </p>
+
+                <div class="harga">
+
+                    Rp35.000
+                    <span>/ hari</span>
+
+                </div>
+
+                <button
+                    onclick="sewa('Toyota Avanza',6450000)"
+                >
+                    Sewa Sekarang
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HONDA SCOOPY -->
+
+        <div class="produk">
+
+            <div class="gambar-produk">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=85"
+                    alt="Toyota Innova"
+                >
+
+            </div>
+
+            <div class="produk-info">
+
+                <span class="status">
+                    Tersedia
+                </span>
+
+                <h3>
+                    Toyota Innova
+                </h3>
+
+                <p class="deskripsi">
+                    Desain stylish dan nyaman digunakan
+                    untuk perjalanan dalam kota.
+                </p>
+
+                <div class="harga">
+
+                    Rp45.000
+                    <span>/ hari</span>
+
+                </div>
+
+                <button
+                    onclick="sewa('Toyota Innova',8450000)"
+                >
+                    Sewa Sekarang
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HONDA VARIO 125 -->
+
+        <div class="produk">
+
+            <div class="gambar-produk">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOf_DkR0vVeEH3uGXcUecMAseIB8vq_0WW8aT3ZKQKlA&s=10"
+                    alt="Honda Brio"
+                >
+
+            </div>
+
+            <div class="produk-info">
+
+                <span class="status">
+                    Tersedia
+                </span>
+
+                <h3>
+                    Honda Brio
+                </h3>
+
+                <p class="deskripsi">
+                    Performa bertenaga dengan desain
+                    modern dan nyaman.
+                </p>
+
+                <div class="harga">
+
+                    Rp50.000
+                    <span>/ hari</span>
+
+                </div>
+
+                <button
+                    onclick="sewa('Honda Brio',450000)"
+                >
+                    Sewa Sekarang
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HONDA VARIO 160 -->
+
+        <div class="produk">
+
+            <div class="gambar-produk">
+
+                <img
+                    src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=85"
+                    alt="Mitsubishi Xpander"
+                >
+
+            </div>
+
+            <div class="produk-info">
+
+                <span class="status">
+                    Tersedia
+                </span>
+
+                <h3>
+                    Mitsubishi Xpander
+                </h3>
+
+                <p class="deskripsi">
+                    Mobil matic bertenaga dengan tampilan
+                    sporty dan modern.
+                </p>
+
+                <div class="harga">
+
+                    Rp60.000
+                    <span>/ hari</span>
+
+                </div>
+
+                <button
+                    onclick="sewa('Mitsubishi Xpander',7000000)"
+                >
+                    Sewa Sekarang
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HONDA PCX -->
+
+        <div class="produk">
+
+            <div class="gambar-produk">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=85"
+                    alt="Toyota Rush"
+                >
+
+            </div>
+
+            <div class="produk-info">
+
+                <span class="status">
+                    Tersedia
+                </span>
+
+                <h3>
+                    Toyota Rush
+                </h3>
+
+                <p class="deskripsi">
+                    Mobil premium dengan jok nyaman
+                    untuk perjalanan jauh.
+                </p>
+
+                <div class="harga">
+
+                    Rp75.000
+                    <span>/ hari</span>
+
+                </div>
+
+                <button
+                    onclick="sewa('Toyota Rush',700000)"
+                >
+                    Sewa Sekarang
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HONDA ADV -->
+
+        <div class="produk">
+
+            <div class="gambar-produk">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU9Gr0M_QMIqerL8dsNjYkiS_uTWPc85UwefyoTtixOQ&s=10"
+                    alt="Honda ADV"
+                >
+
+            </div>
+
+            <div class="produk-info">
+
+                <span class="status">
+                    Tersedia
+                </span>
+
+                <h3>
+                    Honda HR-V
+                </h3>
+
+                <p class="deskripsi">
+                    Cocok untuk perjalanan dalam kota
+                    maupun perjalanan jarak jauh.
+                </p>
+
+                <div class="harga">
+
+                    Rp80.000
+                    <span>/ hari</span>
+
+                </div>
+
+                <button
+                    onclick="sewa('Honda HR-V',800000)"
+                >
+                    Sewa Sekarang
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Rental Mobil | Semua Hak Dilindungi
+    </p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
